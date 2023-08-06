@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.open-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.open-button {
+  background-color: #1c87c9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.login-popup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  width: 52vh !important;
+  transform: translate(-45%, 5%);
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #868c8e;
+}
+
+/* Actions comptes Dashboard */
+
+#actionAccountSelector {
+  width: 40vh !important;
+  z-index: 9;
+  background-color: #868c8e;
+}
+
+/* Largeur complète pour les champs de saisie */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: none;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  /*background-color: #8ebf42;*/
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: #cc0000;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+#not-allowed {
+  background-color: #666;
+  border: 2px solid black;
+}
+
+.staff-logs-box li {
+  list-style-type: none;
+  list-style: none;
+}
+
+.last-view-boxs-container li {
+  list-style: none;
+}
+
+.sensitive-item {
+  filter: blur(3.5px);
+  color: transparent;
+  background-color: #9cc9d5d2;
+  transition: all ease-in-out 0.3s;
+}
+
+.sensitive-item:hover {
+  color: black;
+  background-color: transparent;
+  filter: none;
+}
+
+/* Loading icon */
+
+#loadingIcon {
+  display: none;
+  top: 60%;
+}
+
+/* BAKGROUNDS */
+
+.popup-bg-dark-blue {
+  background-color: #29506e;
+}
+
+/* SPAN COLORS */
+
+.item-email {
+  color: purple;
+}
+
+.item-status {
+  color: #cc0000;
+}
+
+.item-username {
+  color: #1c87c9;
+}

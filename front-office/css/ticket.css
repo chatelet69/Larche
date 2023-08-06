@@ -1,0 +1,150 @@
+.title-ticket {
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1vw;
+}
+.accueil-title {
+  margin-bottom: 0;
+}
+.ticket-box {
+  position: relative;
+  height: 64vh;
+}
+.arrow-back {
+  width: 1.5vw;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.ticket-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.resolved {
+  color: #4ecb71;
+}
+.barres-ticket {
+  width: 40%;
+  border: #4ecb71 solid 0.2vw;
+}
+.resolved-ticket {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2vw;
+  text-align: center;
+  color: #4ecb71;
+}
+.end-ticket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.send-msg-ticket {
+  width: 100%;
+}
+.ticket-msg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#formSendMsg {
+  align-items: center;
+}
+.ticket-msg .grey-option {
+  width: 3vw;
+  margin: 0;
+}
+.btn-ticket-msg {
+  width: 3vw;
+  margin: 0;
+}
+.button-ticket {
+  margin-bottom: 0;
+  padding: 0;
+  height: 2.9vw;
+}
+.ticket-msg .grey-input {
+  width: 50%;
+  margin: 0;
+}
+.conv-ticket {
+  height: 85%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.conv-msg-respons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1vw;
+}
+.container-pfp{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+.container-pfp img{
+    width: 2.5vw;
+}
+.conv-msg-respons .first-msg-ticket{
+    background-color: #D9D9D9;
+    padding: 1vw;
+    margin-left: 1vw;
+    border: none;
+    border-radius: 0px 20px 20px 20px;
+}
+.conv-msg-respons .date-msg-ticket{
+    font-size: 0.5vw;
+    color: grey;
+    margin-left: 1vw;
+}
+.conv-msg-respons .img-ticket{
+    max-height: 10vw;
+    margin-left: 1vw;
+}
+
+.conv-msg-author {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1vw;
+    align-self: flex-end;
+  }
+  .conv-msg-author .first-msg-ticket{
+      background-color: #6FA167;
+      padding: 1vw;
+      margin-right: 1vw;
+      border: none;
+      border-radius: 20px 0px 20px 20px;
+  }
+  .conv-msg-author .first-msg-ticket p{
+    color: white;
+    text-align: end;
+    word-break: break-word;
+  }
+  .conv-msg-author .date-msg-ticket{
+      font-size: 0.5vw;
+      color: grey;
+      text-align: end;
+      margin-right: 1vw;
+  }
+  .conv-msg-author .img-ticket{
+      max-height: 10vw;
+      margin-right: 1vw;
+  }
+  .conv-msg-author .img-ticket-container{
+    display: flex;
+    flex-direction: row-reverse;
+  }

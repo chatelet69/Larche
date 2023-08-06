@@ -1,0 +1,180 @@
+.boutonconnect-signin {
+    border: none;
+    background-color: var(--color-buttonback-bg);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: var(--color-text-white);
+    margin-bottom: 0.5vw;
+    border-radius: 12px;
+    box-shadow: var(--color-inputsign-shadow) 0px 6px 12px -2px, var(--color-opacity-black25) 0px 3px 7px -3px;
+
+}
+
+.alert-signup {
+    text-align: center;
+}
+
+
+.boutonconnect-signin2 {
+    border: none;
+    background-color: var(--color-validate-button);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: var(--color-text-white);
+    margin-bottom: 0.5vw;
+    border-radius: 12px;
+    box-shadow: var(--color-inputsign-shadow) 0px 6px 12px -2px, var(--color-opacity-black25) 0px 3px 7px -3px;
+    margin-top: 0.75vw;
+
+}
+
+.boutonconnect-signin2:hover {
+    transition: 0.2s;
+    background-color: var(--color-validate-button-hover);
+}
+
+.boutonconnect-signin:hover {
+    transition: 0.75s;
+    background-color: var(--color-buttonback-hover);
+}
+
+/* Sign up containre */
+.signin-container {
+    background-color: var(--container-bg);
+    color: var(--color-no-change);
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 31px;
+}
+
+/* Eyes */
+
+.eyes {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.eyeschange {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.eyesclose {
+    width: 1.5vw;
+    height: 1.5vw;
+    display: none;
+}
+
+.captcha-square {
+    width: 11%;
+}
+
+/* Checkbox */
+#checkboxtest {
+    margin-bottom: 10px;
+}
+
+#checkbox {
+    margin-bottom: 10px;
+}
+
+#inputs2 {
+    margin-left: 25px;
+}
+
+#sun {
+    width: 1.78vw;
+    height: 3.67vh;
+}
+#description1 {
+    resize: none;
+}
+#description1 {
+    resize: none;
+}
+
+#image-container{
+    text-align: center;
+}
+:root {
+    --color-buttonback-bg: #989898;
+    --color-buttonback-hover: red;
+    --color-text-white: #FFFFFF;
+    --color-inputsign-shadow: rgba(50, 50, 93, 0.25);
+    --color-opacity-black25: rgba(0, 0, 0, 0.25);
+    --color-validate-button: #5D7E57;
+    --color-validate-button-hover: #000000;
+    --container-bg: rgb(250, 237, 205, 0.8);
+
+}
+
+.dark-theme {
+    --container-bg: rgba(217, 217, 217, 0.89);
+    --color-validate-button: #2D2D2D;
+
+}
+.captcha-img {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 428px) and (max-height: 926px) {
+    .signin-container {
+        width: 86.5vw;
+        padding-top: 10px ;
+        padding-bottom:30px ;
+        display: flex;
+        margin-top: 20px;
+    }
+    .input {
+        box-shadow: var(--color-inputsign-shadow) 0px 6px 12px -2px, var(--color-opacity-black25) 0px 3px 7px -3px;
+        margin-bottom: 20px;
+        width: 72vw;
+    }
+    progress {
+        appearance: auto;
+    }
+    .logo, .darkmoon {
+        height: 6.5vh;
+        width: 13vw;
+    }
+    .signin-container img {
+            display: none;
+    }
+    .boutonconnect-signin2 {
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #inputs2 {
+     margin-left: 0;
+    }
+    .boutonconnect-signin {
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(196, 7, 7); 
+        margin-bottom: 10px;
+    }
+    .label-signin2 {
+        width: 270px;
+    }
+    .captcha-img {
+        display: flex;
+        justify-content: center;
+    }
+    .captcha-container {
+        width: 500px;
+    }
+
+}

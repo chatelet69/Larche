@@ -1,0 +1,358 @@
+/* Abonnés et abonnements */
+.followers-container {
+    width: 30vw;
+    background-color: white;
+    border-radius: 8px;
+    outline: 999em solid rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 26vw;
+    right: 35vw;
+}
+
+.followers-title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.followers-title .croix {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    padding: 0px;
+    width: 1vw;
+}
+
+.followers-title h2 {
+    font-size: 1.5vw;
+}
+
+.followers-list {
+    max-height: 15vw;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1vw;
+}
+
+.followers-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.link-follow{
+    margin-bottom: 1vw;
+}
+.followers-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1vw;
+}
+
+.followers-info p:nth-child(1) {
+    font-weight: bold;
+}
+
+.followers-info p:nth-child(2) {
+    color: grey;
+}
+
+.followers-list .PDP {
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.follow-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.follow-section p {
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.follow-section h2 {
+    font-size: 1vw;
+}
+
+.profil-h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+    margin-top: 1.5vw;
+    color: var(--secondary-color-line);
+}
+
+.profil-desc {
+    background-color: white;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profil-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-contri {
+    background-color: #52CFAA;
+    border-radius: 8px;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+
+}
+
+.badge-mod {
+    background-color: #FFC700;
+    border-radius: 8px;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+
+}
+
+.badge-admin {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+
+}
+
+.box-profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    top: -4.5vw;
+    margin-bottom: -4.5vw;
+
+}
+
+.box-profil .PDP {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+}
+
+/* Bannière */
+.banniere {
+    width: 100%;
+    height: 9vw;
+    border: 1px solid black;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+}
+
+.banniere img {
+    width: 100%;
+    margin: -10% -0px -0px 0px;
+    /* A changer comme pas ouf comme systeme, a voir avec d'autres img*/
+}
+
+:root {
+    --color-profil-circle: #FAEDCD;
+}
+
+.dark-theme {
+    --color-profil-circle: #3A3A3A;
+}
+.unsub{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+    background-color: #2077E7;
+    color: white;
+    padding: 0.2vw 0.5vw 0.2vw 0.5vw;
+    border-radius: 8px;
+
+}
+.sub{
+    background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+    background-color: #E75C20;
+    color: white;
+    padding: 0.2vw 0.5vw 0.2vw 0.5vw;
+    border-radius: 8px;
+}
+.follow-button{
+    display: flex;
+    justify-content: center;
+}
+.name-profil{
+    color: var(--secondary-color-line);
+}
+.nb_foll{
+    color: var(--secondary-color-line);
+}
+.filter-event-profile tbody tr td{
+    color: var(--secondary-color-line);
+}
+.filter-event-profile tbody tr td:nth-child(1){
+margin-right: 3vw;
+}
+.filter-event-profile tbody tr{
+    display: flex;
+}
+.infos-events-profil{
+    margin-bottom: 1vw;
+}
+.btn-abso{
+    position: absolute;
+    bottom: 0;
+    right: 1vw;
+}
+.filter-event-profile tbody tr td:hover{
+    text-decoration: underline;
+}
+.date-event-profile{
+    font-size: 0.8vw;
+    color: gray;
+}
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: none;
+    z-index: 99;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 12px;
+    outline: 999em solid rgba(0, 0, 0, .4);
+}
+.popup .paragraph-popup, .popup .h2-popup{
+    text-align: center;
+}
+.popup input{
+    margin-top: 1vw;
+    width: 100%;
+}
+.delete-confirm{
+    border: none;
+    background-color: red;
+    margin-bottom: 5px;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 10vw;
+    cursor: pointer;
+}
+.input-close{
+    border: none;
+    background-color: #5D7E57;
+    margin-bottom: 5px;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 10vw;
+    cursor: pointer;
+}
+.btn-respons{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+@media screen and (max-width: 428px) and (max-height: 926px) {
+    .banniere{
+        height: 10vh;
+    }
+    .box-profil .PDP{
+        width: 10vh;
+        height: 10vh;
+    }
+    .box-profil{
+        top: -5vh;
+        margin-bottom: -4vh;
+    }
+    .follow{
+        margin-top: 1vh;
+      }
+      .follow-section p, .follow-section h2{
+        font-size: 2vh;
+      }
+      .badge p{
+        font-size: 1vh;
+      }
+      .profil-h2{
+        margin-top: 1.5vh;
+        margin-bottom: 1vh;
+      }
+      .profil-desc{
+        max-width: 90%;
+      }
+      .date-event-profile{
+        font-size: 0.8vh;
+      }
+      .list-articles .colorbutton{
+        font-size: 1.2vh;
+        width: 30vw;
+      }
+      .event-teaser{
+        font-size: 1vh;
+      }
+      .followers-container{
+        width: 90%;
+        right: initial;
+        top: 30%;
+      }
+      .followers-title{
+        height: 3vh;
+      }
+      .followers-title h2{
+        font-size: 2vh;
+      }
+      .followers-list{
+        max-height: 30vh;
+        padding: 1vh;
+      }
+      .followers-title .croix{
+        width: 2vh;
+      }
+      .link-follow{
+        margin-bottom: 1vh;
+      }
+      .followers-info p:nth-child(2){
+        font-size: 1.5vh;
+      }
+      .followers-info{
+        padding-left: 1.5vh;
+      }
+      .popup{
+        width: 90%;
+    }
+}

@@ -1,0 +1,294 @@
+.button-like{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.likes{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+.likes img{
+    width: 1.5vw;
+    padding-right: 0.5vw;
+}
+.liked{
+    filter: invert(9%) sepia(100%) saturate(6855%) hue-rotate(10deg) brightness(87%) contrast(114%);
+}
+.coeur{
+    width: 1.5vw;
+}
+
+.bg-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.article-content{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 80vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px var(--color-opacity-black25);
+}
+.likeArticle{
+    font-weight: 600;
+}
+.article-infos{
+    margin-bottom: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.animals {
+    color: var(--secondary-color);
+    background-color: var(--color-bg-article-animal);
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 33px;
+    font-weight: bold;
+}
+
+.jardinerie {
+    color: var(--color-white-text);
+    background-color: #5D7E57;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 33px;
+    font-weight: bold;
+}
+
+.autre {
+    color: var(--secondary-color);
+    background-color: var(--color-badge);
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 33px;
+    font-weight: bold;
+}
+.article-container{
+    margin-left: 3vw;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.creator{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.creator img{
+    width: 1.5vw;
+    margin-left: 0.5vw;
+}
+.creator p , .creator a{
+    color: var(--article-info-publi);
+    margin-bottom: 0.5vw;
+}
+.profil-visit:hover{
+    text-decoration: underline;
+}
+.date-publi{
+    color: var(--article-info-publi);
+    margin-bottom: 1vw;
+}
+.teaser-article{
+    font-size: 1vw;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+.titre-article{
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+.article-suggest{
+    margin-right: 3vw;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 0.5vw;
+}
+.article-suggest-box{
+    margin-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+.article-suggest-img-box{
+    width: 100%;
+    height: 12vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.article-suggest-img-box img{
+    width: 90%;
+    overflow: hidden;
+}
+.article-suggest h2{
+    margin-bottom: 3vw;
+}
+.article-picture-box{
+    width: 100%;
+    height: 28vw;
+    overflow: hidden;
+    margin-bottom: 2vw;
+}
+.article-picture-box img{
+    width: 100%;
+}
+h4{
+    font-weight: 600;
+    font-size: 1.2vw;
+    text-align: center;
+    overflow-wrap: break-word;
+    width: 90%;
+}
+.commentaires{
+    background-color: white;
+}
+.comment-content{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 80vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px var(--color-opacity-black25);
+}
+.send-comment{
+    position: relative;
+}
+.send-comment img{
+    position: absolute;
+    width: 1.5vw;
+    right: 1vw;
+    top: 1.5vw;
+    cursor: pointer;
+}
+.send-comment .grey-input{
+    width: 100%;
+}
+.comment-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D9D9D9;
+    padding: 1vw;
+    margin-bottom: 1vw;
+}
+.img-ticket-container{
+    width: 3vw;
+    height: 3vw;
+    overflow: hidden;
+}
+.img-ticket-container img{
+    width: 100%;
+}
+.comment-author-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1vw;
+}
+.author-comment{
+    color: black;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.author-comment:hover{
+    text-decoration: underline;
+}
+.date-comment{
+    color: grey;
+    font-size: 0.7vw;
+}
+.content-comment{
+    font-size: 1vw;
+    font-weight: 500;
+    width: 60vw;
+}
+.option-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 20vw;
+}
+.like-comment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7vw;
+    cursor: pointer;
+}
+.like-comment p{
+    margin-right: 0.5vw;
+}
+.like-comment img{
+    width: 1vw;
+}
+.report-comment{
+    margin-top: 1vw;
+}
+.report-comment a{
+    color: grey;
+    font-size: 0.7vw;
+}
+.report-comment a:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.author-comment-ticket{
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.comment-container{
+    max-height: 30vh;
+    overflow-y: auto;
+}
+.del-comment{
+    margin-top: 1vw;
+    color: grey;
+    font-size: 0.7vw;
+}
+.del-comment:hover{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}

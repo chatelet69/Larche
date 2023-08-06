@@ -1,0 +1,23 @@
+<?php
+    session_start();
+    include('./db-connect.php');
+
+    if (isset($_POST['event'])) {
+        if (!empty($_POST['event'])) {
+            $event_id = $_POST['event'];
+            $event_id = htmlspecialchars($event_id);
+            $event_id = strip_tags($event_id);
+
+            $register = $bdd -> prepare('INSERT INTO register_event (user_id, id_event) VALUES (?, ?)');
+            $register -> execute([$_SESSION['user_id'], $event_id]);
+            header('location: https://larche.ovh/events');
+            exit();
+        }else {
+            header('location: https://larche.ovh/events');
+            exit();
+        }
+    } else {
+        header('location: https://larche.ovh/events');
+        exit();
+    }
+?>

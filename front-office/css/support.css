@@ -1,0 +1,105 @@
+.support-box{
+    display: flex;
+    justify-content: center;
+}
+.ticket-box{
+    width: 60vw;
+    height: 65vh;
+    margin-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px var(--color-opacity-black25);
+    background-color: white;
+    border: 1px solid black;
+}
+.ticket-list{
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+.new-ticket{
+    background-color: #47B4B4;
+    color: white;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    border-radius: 20px;
+    margin-bottom: 1vw;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.ticket{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 60%;
+    margin-top: 2vw;
+    padding: 1vw;
+    position: relative;
+}
+.ticket-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.waiting{
+    color: #FF7A00;
+}
+.resolved{
+    color: #4ECB71;
+}
+.ticket-title{
+    font-weight: bold;
+}
+.ticket-title:hover{
+    text-decoration: underline;
+}
+.ticket-id{
+    font-weight: bold;
+}
+.ticket-status{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ticket-status img{
+    width: 1.5vw;
+    margin-left: 0.5vw;
+}
+.ticket-date{
+    font-size: 0.7vw;
+    color: grey;
+}
+.ticket-del{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 1vw;
+    cursor: pointer;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.ticket-del-img{
+    width: 1vw;
+}
+.no-recent-ticket{
+    position: absolute;
+    top: 50%;
+}

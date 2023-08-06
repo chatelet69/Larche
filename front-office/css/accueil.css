@@ -1,0 +1,25 @@
+.accueil-inner {
+    width: 83vw;
+    height: 10vw;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.accueil-qst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil-qst p {
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.accueil-qst .colorbutton {
+    margin-bottom: 1vw;
+}
+p{
+    margin-bottom: 0;
+}

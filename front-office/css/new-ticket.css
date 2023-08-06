@@ -1,0 +1,49 @@
+.form-new-ticket{
+    width: 44vw;
+    height: 100%;
+}
+.new-ticket{
+    width: 15vw;
+}
+.form-new-ticket textarea{
+    resize: both;
+    max-height: 20vw;
+    min-height: 10vw;
+    max-width: 44vw;
+    min-width: 44vw;
+}
+.grey-option {
+    background-color: #D9D9D9;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    border-radius: 1vw;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 2vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.label-file {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    width: 15vw;
+    text-align: end;
+}
+.grey-input{
+    margin-bottom: 2vw;
+}
+.container-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.msg-danger{
+    color: red;
+    text-align: center;
+}

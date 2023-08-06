@@ -1,0 +1,238 @@
+.article-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15vw;
+    height: 22vw;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    padding-bottom: 1vw;
+}
+.img-article{
+    width: 15vw;
+}
+.container-img{
+    overflow: hidden;
+    width: 15vw;
+    height: 10vw;
+}
+.bgArticles{
+
+    background-color: var(--primary-color);
+}
+
+#articlesmain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.likes{
+    display: flex;
+    flex-direction: row;
+    font-size: 1vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+.likes img{
+    width: 1.2vw;
+    padding-left: 0.5vw;
+}
+.article-box p{
+    text-align: center;
+}
+.filter-article tbody tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+.filter-article{
+    width: 100%;
+}
+tbody{
+    border-bottom: 1px solid black;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.filter{
+    cursor: pointer;
+}
+.article-infos{
+    color: grey;
+    font-weight: 400;
+    font-size: 0.7vw;
+    align-self: flex-start;
+    margin-bottom: 0.5vw;
+}
+.article-infos p{
+    color: grey;
+}
+.article-box h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1vw;
+}
+.content-box{
+    overflow-wrap: break-word;
+    width: 80%;
+    height: 100%;
+    overflow:hidden;
+    font-size: 0.8vw;
+}
+.content-box p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mainDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.button-like{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.liked{
+    filter: invert(9%) sepia(100%) saturate(6855%) hue-rotate(10deg) brightness(87%) contrast(114%);
+}
+.coeur{
+    width: 1vw;
+}
+.animals {
+    color: var(--secondary-color);
+    background-color: var(--color-bg-article-animal);
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 33px;
+    font-weight: bold;
+}
+
+.jardinerie {
+    color: var(--color-white-text);
+    background-color: #5D7E57;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 33px;
+    font-weight: bold;
+}
+
+.autre {
+    color: var(--secondary-color);
+    background-color: var(--color-badge);
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 33px;
+    font-weight: bold;
+}
+.all {
+    background-color: #52CFAA;
+    color: var(--secondary-color);
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 33px;
+    font-weight: bold;
+}
+.h3-container{
+    overflow-wrap: break-word;
+    width: 90%;
+    margin-bottom: 0.5vw;
+}
+.bouton{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profil-visit{
+    color: grey;
+}
+.profil-visit:hover{
+    text-decoration: underline;
+    color: grey;
+}
+.filter-follow{
+    color: white;
+    background-color: saddlebrown;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 33px;
+    font-weight: bold;
+}
+.filtrer-par{
+    color: var(--secondary-color-line);
+}
+.no-article p{
+    color: var(--secondary-color-line);
+}
+@media screen and (max-width: 428px) and (max-height: 926px), screen and (device-width <= 428px) and (device-height <= 926px) {
+
+.filtrer-par{
+    margin-right: 70%;
+}
+.filter-article tbody tr{
+    flex-wrap: wrap;
+    margin-bottom: 2vh;
+
+}
+.filter-article tbody tr td{
+    margin-bottom: 1vh;
+}
+.filter-article tbody tr th{
+margin-bottom: 1vh;
+}
+#articlesmain{
+    flex-direction: column;
+}
+.article-box h3{
+    font-size: 2vh;
+}
+.content-box{
+    font-size: 1.5vh;
+    margin-bottom: 1vh;
+}
+.likes{
+    font-size: 1.5vh
+}
+.likes img{
+    width: 1.5vh;
+}
+.img-article{
+    width: 100%;
+}
+.container-img{
+    width: 100%;
+    height: 20vh;
+}
+.article-box{
+    width: 90%;
+    height: initial;
+    margin-bottom: 3vh;
+}
+.no-article img{
+    width: 50%;
+}
+.no-article p{
+    font-size: 1.5vh;
+}
+}
